@@ -1,120 +1,23 @@
 <!DOCTYPE html>
-<head>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href='http://fonts.useso.com/css?family=Open+Sans:300,400,600,700' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="css/templatemo-style.css">
-    <title>ZBLR.github.io</title>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>html5</title>
+    <style type="text/css">
+    .theme{
+      display: block;
+      width: 200px;
+      font-size: 30px;
+      margin: 100px auto;
+    }
+    </style>
 </head>
-
 <body>
-    <div class="fixed-header">
-        <div class="container">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle">
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>                        
-                </button>
-                <a class="navbar-brand" href="#home">~Zhang Bo~</a>
-            </div>
-            <nav class="main-menu">
-                <ul>
-                    <li><a class="external" href="http://matrix.h5jun.com/" target="_blank">Matrix</a></li>
-                    <li><a class="external" href="http://www.w3ctech.com/" target="_blank">W3Ctech</a></li>
-                    <li><a href="#clients">空缺</a></li>
-                    <li><a class="external" href="#">空缺</a></li>
-                    <li><a href="#contact">空缺</a></li>
-                </ul>
-            </nav>
-        </div>
-    </div>
-    
-    <div class="container">
-        <section class="col-md-12 content" id="home">
-           <div class="col-lg-6 col-md-6 content-item">
-               <img src="images/1.jpg" alt="Image" class="tm-image">
-           </div>
-           <div class="col-lg-6 col-md-6 content-item content-item-1 background">
-               <h2 class="main-title text-center dark-blue-text">Github Repository</h2>
-               <p>2016-04-26，我在github上正式注册，并上传第一份代码，这是一个开始，也是延续。
-               希望在这里记录下日后所敲击出的一切，同时也会乐于分享所看到的优秀代码·~
-               谨以此来纪念逝去的大学时光，以及没有定数的未来。<br/>
-               <a class="light-blue-text" href="https://github.com/ZBLR/zblr.github.io" target="_blank">IPage~<a><br/>    
-               <a class="light-blue-text" href="https://github.com/ZBLR/360SubmitProgram" target="_blank">Canlander~</a><br/>    
-               <a class="light-blue-text" href="https://github.com/ZBLR/ManageSystem" target="_blank">ManageSystem~</a><br/>               
-               <a type="button" class="btn btn-big dark-blue-btn" style="display: block" href="https://github.com/zblr" target="_blank">源码传送门</a>
-       
-           </div>
-       </section>
-
-       <section class="col-md-12 content padding" id="services">
-        <div class="col-lg-6 col-md-6 col-md-push-6 content-item">
-           <img src="images/4.jpg" alt="Image" class="tm-image">
-       </div>
-       <div class="col-lg-6 col-md-6 col-md-pull-6 content-item background flexbox">
-           <h2 class="section-title">CSDN Blog</h2>
-           <p class="section-text">2016-04-28，博客开通，没有什么东西可以记录，就用这些原始英文来填补吧。天色已晚，只想蛋蛋的说一句，晚安世界！<br/> sodales pellentesque purus. Pellentesque porttitor ante at nulla ornare, eget sagittis sapien pulvinar. In semper mi ut enim mollis, ut auctor lectus posuere.</p>
-           <ul class="dark-blue-text">
-               <li>+ Cras id dui eu tortor eleifend gravida</li>
-               <li>+ Maecenas tempus nisi in arcu</li>
-               <li>+ Nulla eget sem sit amet turpis tempus</li>
-               <li>+ Crasvel eros id ipsum accumsan</li>
-           </ul>
-          <!--<p>Nulla odio nunc, rhoncus quis porttitor quis, convallis sed tortor. Quisque dui mews, euismod vel sapien at, maximus feugiat tellus. </p>-->
-            <a type="button"  class="btn btn-big dark-blue-btn" href="http://blog.csdn.net/a784846435" target="_blank">博客传送门</a>
-       </div>
-   </section>
+<div class="theme">
+  Hello, world.
 </div>
 
-<div class="text-center footer">
-	<div class="container">
-		Copyright @ 2016 JLU 张博    
-    	| 高度决定视野,角度改变观念,尺度把握人生！
-    </div>
-</div>
-
-<script src="js/jquery.min.js"></script>
-<script src="js/bootstrap.min.js"></script>
-<script src="js/jquery.singlePageNav.min.js"></script>
-
-<script>
-
-// Check scroll position and add/remove background to navbar
-function checkScrollPosition() {
-    if($(window).scrollTop() > 50) {
-      $(".fixed-header").addClass("scroll");
-  } else {        
-      $(".fixed-header").removeClass("scroll");
-  }
-}
-
-$(document).ready(function () {   
-    // Single page nav
-    $('.fixed-header').singlePageNav({
-        offset: 59,
-        filter: ':not(.external)',
-        updateHash: true        
-    });
-
-    checkScrollPosition();
-
-    // nav bar
-    $('.navbar-toggle').click(function(){
-        $('.main-menu').toggleClass('show');
-    });
-
-   /* $('.main-menu a').click(function(){
-        $('.main-menu').removeClass('show');
-    });*/
-  
-});
-
-$(window).on("scroll", function() {
-    checkScrollPosition();    
-});
-</script>
 </body>
 </html>
+
+  
