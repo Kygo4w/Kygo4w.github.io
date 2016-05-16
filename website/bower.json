@@ -1,0 +1,24 @@
+{
+  "name": "website",
+  "description": "a welcome website",
+  "main": "index.html",
+  "authors": [
+    "xiaokunyu"
+  ],
+  "license": "ISC",
+  "keywords": [
+    "welcome"
+  ],
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^3.3.6",
+    "angular": "^1.5.5"
+  }
+}

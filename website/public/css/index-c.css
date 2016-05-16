@@ -1,0 +1,14 @@
+body{
+	background: rgb(43,117,221);
+	color: #000;
+}
+.navbar-wrapper{
+	margin-top: 0px;
+}
+.navbar-wrapper > .container-fluid{
+	padding-left: 0px;
+	padding-right: 0px;
+}
+.nav{
+	border-radius: 0px;
+}

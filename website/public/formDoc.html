@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <title>志愿者协会招新表单</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="志愿者协会招新">
+    <link rel="styleSheet" type="text/css" href="lib/bootstrap/dist/css/bootstrap.css">
+  </head>
+  <body>
+  	<div class="col-lg-8 col-lg-offset-2">
+  	<div class="panel panel-primary">
+  		<div class="panel-heading">
+  			<div class="panel-title">志愿者协会招新</div>
+  		</div>
+  		<div class="panel-body">
+  			<form id="myForm">
+                <div class="form-group">
+                  <label>姓名:</label>
+                  <input type="text" class="form-control" name="name">
+                </div>
+                <div >
+                  <label>性别:</label>
+                  <select class="form-control" name="sex">
+                    <option>男</option>
+                    <option>女</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label>手机:</label>
+                  <input type="tel" class="form-control" name="tel">
+                </div>
+                <div class="form-group">
+                  <label>邮箱:</label>
+                  <input type="email" class="form-control" name="email" >
+                </div>
+                <div >
+                  <label>报名部门:</label>
+                  <select class="form-control" name="part">
+                    <option>实践部</option>
+                    <option>外联部</option>
+                    <option>企划部</option>
+                    <option>秘书部</option>
+                    <option>敬老部</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label>自我介绍(支持markdown):</label>
+                  <textarea type="text" rows="6" class="form-control" name="introduce"></textarea>
+                </div>
+                <button type="reset" class="btn btn-default">Reset</button>
+                <a class="btn btn-primary" style="float:right;" href="index.html">前往迎新页面</a>
+            </form>
+  		</div>
+  	</div>
+    </div>
+    <script src="lib/jquery/dist/jquery.js"></script>
+  </body>
+</html>

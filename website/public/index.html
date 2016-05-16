@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>吉大志愿者协会招新</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="吉大志愿者协会招新">
+    <link rel="styleSheet" type="text/css" href="css/bootstrap.css">
+    <link rel="styleSheet" type="text/css" href="css/carousel.css">
+    <link rel="styleSheet" type="text/css" href="css/index-c.css">
+    <link rel="shortcut icon" type="text/css" href="image/jlu.ico">
+  </head>
+  <body ng-app="webapp" ng-controller="NewsController">
+    <div class="navbar-wrapper">
+      <div class="container-fluid">
+        <nav class="navbar navbar-inverse navbar-static-top">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="#">计算机学院志愿者协会</a>
+            </div>
+            <div id="navbar" class="navbar-collapse collapse">
+              <ul class="nav navbar-nav">
+                <li><a href="#">首页</a></li>
+                <li data-dismiss="modal" data-toggle="modal" data-target="#part"><a href="#section">介绍</a></li>
+                <li><a href="#section">关于</a></li>
+                <li data-dismiss="modal" data-toggle="modal" data-target="#signup"><a href="javascript:void(0)">报名</a></li>
+                <li><a href="formDoc.html">下载</a></li>
+                <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">查看<span class="caret"></span></a>
+                  <ul class="dropdown-menu">
+                    <li data-dismiss="modal" data-toggle="modal" data-target="#part7"><a href="javascript:void(0)">已报名人员信息</a></li>
+                    <li data-dismiss="modal" data-toggle="modal" data-target="#signup"><a href="javascript:void(0)">招新报名表</a></li>
+                  </ul>
+                </li>
+              </ul>
+              <ul class="nav navbar-nav navbar-right">
+              	<li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">联系我们<span class="caret"></span></a>
+                  <ul class="dropdown-menu">
+                    <li style="text-align: center;">tel:18844548998</li>
+                    <li style="text-align: center;">qq:354007448</li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+
+      </div>
+    </div>
+
+
+    <!-- Carousel -->
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+      <!-- Indicators -->
+      <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+        <li data-target="#myCarousel" data-slide-to="3"></li>
+        <li data-target="#myCarousel" data-slide-to="4"></li>
+        <li data-target="#myCarousel" data-slide-to="5"></li>
+      </ol>
+      <div class="carousel-inner" role="listbox" >
+        <div class="item active">
+          <img class="first-slide" src="image/图片3.jpg" width="100%" height="300" alt="First slide">
+          <div class="container">
+            <div class="carousel-caption">
+              
+              <p><a class="btn btn-lg btn-primary" role="button" data-toggle="modal" data-target="#signup">快速报名</a></p>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <img class="second-slide" src="image/图片2.png" alt="Second slide">
+          <div class="container">
+            <div class="carousel-caption">
+              <p><a class="btn btn-lg btn-primary" role="button" data-toggle="modal" data-target="#signup">快速报名</a></p>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <img class="third-slide" src="image/图片1.png" alt="Third slide">
+          <div class="container">
+            <div class="carousel-caption">
+              <p><a class="btn btn-lg btn-primary" role="button" data-toggle="modal" data-target="#signup">快速报名</a></p>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <img class="third-slide" src="image/图片4.png" alt="Third slide">
+          <div class="container">
+            <div class="carousel-caption">
+              <p><a class="btn btn-lg btn-primary" role="button" data-toggle="modal" data-target="#signup">快速报名</a></p>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <img class="third-slide" src="image/图片3.png" alt="Third slide">
+          <div class="container">
+            <div class="carousel-caption">
+              <p><a class="btn btn-lg btn-primary" role="button" data-toggle="modal" data-target="#signup">快速报名</a></p>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <img class="third-slide" src="image/图片5.png" alt="Third slide">
+          <div class="container">
+            <div class="carousel-caption">
+              <p><a class="btn btn-lg btn-primary" role="button" data-toggle="modal" data-target="#signup">快速报名</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+
+    <div class="container marketing">
+
+      <!-- Three columns of text below the carousel -->
+      <div class="row" id="section">
+        <div class="col-lg-4">
+          <img class="img-circle" src="image/1.jpg" alt="实践部" width="140" height="140">
+          <h2>实践部</h2>
+          <p>“用行动诠释爱心，用志愿践行承诺”，以实践活动为主要工作的部门，是协会进行常规活动的核心，负责策划和组织各项实践活动。</p>
+          <p><a class="btn btn-primary" data-toggle="modal" data-target="#part1" role="button">了解更多 &raquo;</a></p>
+        </div>
+        <div class="col-lg-4">
+          <img class="img-circle" src="image/2.jpg" alt="Generic placeholder image" width="140" height="140">
+          <h2>外联部</h2>
+          <p>负责协会与校内外社团及社会公益组织的联系，协会部分经费的筹集，为协会寻找活动资源及配合协会项目的建设。开朗、热情是我们的最大特点。</p>
+          <p><a class="btn btn-primary" data-toggle="modal" data-target="#part2" role="button">了解更多 &raquo;</a></p>
+        </div>
+        <div class="col-lg-4">
+          <img class="img-circle" src="image/3.jpg" alt="Generic placeholder image" width="140" height="140">
+          <h2>企划部</h2>
+          <p>主要负责各项活动的前期策划，组织筹备和后期工作的经验总结。对志愿者协会乃至其他团体的联系沟通与协调，良好内外形象的塑造负责。</p>
+          <p><a class="btn btn-primary" data-toggle="modal" data-target="#part3" role="button">了解更多 &raquo;</a></p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-4 col-lg-offset-2">
+          <img class="img-circle" src="image/4.jpg" alt="Generic placeholder image" width="140" height="140">
+          <h2>秘书部</h2>
+          <p>定位于发掘社团文化，倡导社团精神。负责协会人人主页和微博的管理，活动的新闻采写、宣传单海报制作以及视频剪辑等有关社团文化的活动。</p>
+          <p><a class="btn btn-primary" data-toggle="modal" data-target="#part4" role="button">了解更多 &raquo;</a></p>
+        </div>
+        <div class="col-lg-4">
+          <img class="img-circle" src="image/5.jpg" alt="Generic placeholder image" width="140" height="140">
+          <h2>敬老部</h2>
+          <p>以关爱老人为出发点，立足社会，开展“爱在夕阳”、“松堂敬老”等一系列品牌活动，把关爱送给每个需要帮助的老人，用爱心点亮社会。</p>
+          <p><a class="btn btn-primary" data-toggle="modal" data-target="#part5" role="button">了解更多 &raquo;</a></p>
+        </div>
+      </div>
+      <!-- FOOTER -->
+      <div class="text-center footer">
+			<div class="container">
+				Copyright @ 2016 JLU 肖坤宇    
+    	| 吉林大学计算机学院志愿者协会2016招新
+    	</div>
+			</div>
+      <div id="signup" class="modal fade">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">  <span aria-hidden="true">&times;</span>
+              </button>
+              <h4 class="modal-title">报名</h4>
+            </div>
+            <div class="modal-body">
+              <div id="myForm">
+                <div class="form-group">
+                  <label>姓名:</label>
+                  <input type="text" class="form-control" name="name" ng-model="new.name">
+                </div>
+                <div >
+                  <label>性别:</label>
+                  <select class="form-control" name="sex" ng-model="new.sex">
+                    <option>男</option>
+                    <option>女</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label>手机:</label>
+                  <input type="tel" class="form-control" name="tel" ng-model="new.tel">
+                </div>
+                <div class="form-group">
+                  <label>邮箱:</label>
+                  <input type="email" class="form-control" name="email" ng-model="new.email">
+                </div>
+                <div >
+                  <label>报名部门:</label>
+                  <select class="form-control" name="part" ng-model="new.part">
+                    <option>实践部</option>
+                    <option>外联部</option>
+                    <option>企划部</option>
+                    <option>秘书部</option>
+                    <option>敬老部</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label>自我介绍(支持markdown):</label>
+                  <textarea type="text" rows="6" class="form-control" name="introduce" ng-model="new.introduce"></textarea>
+                </div>
+                <div class="modal-footer">
+                <span class="help-inline text-danger" ng-bind="editorMessage"></span>
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary" ng-click="save()">Submit</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+			<div id="part" class="modal fade">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">  <span aria-hidden="true">&times;</span>
+              </button>
+              <h4 class="modal-title">志愿者协会</h4>
+            </div>
+            <div class="modal-body">
+            	计算机科学与技术学院志愿者协会成立于2001年9月，是一个年轻的，充满活力的年轻组织 ,是计算机学院五大学生组织之一，现已成为我院志愿服务管理体系的核心。其主要的职责是规范志愿者管理体系，促进志愿者价值最大化；深化项目化管理，实现我校志愿服务的一体化；建立志愿者服务基地，积极组织志愿服务，为同学们开展志愿服务平台；建立，健全考核评估体系，增强志愿服务发展活力；加强知识化管理，调研评估，研究发展，推动志愿工作的战略规划
+
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="part1" class="modal fade">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">  <span aria-hidden="true">&times;</span>
+              </button>
+              <h4 class="modal-title">实践部</h4>
+            </div>
+            <div class="modal-body">
+            	这里是高端大气上档次的实践部。我们陪康复中心的大爷聊天打球看书弹吉他，顶得住太阳，踩得稳风雪；我们是最温暖的家庭教师，陪伴小朋友在书本里度过春秋和冬夏；我们是吉大的正能量，和城管叔叔一起为初到的你指方向；我们在国家图书馆服务，我们在动物园流汗，我们在校园义卖，我们为公益疯狂。
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="part2" class="modal fade">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">  <span aria-hidden="true">&times;</span>
+              </button>
+              <h4 class="modal-title">外联部</h4>
+            </div>
+            <div class="modal-body">
+            	计算机学院志愿者协会外联部是协会职能部门之一，属于非活动部门。其职能是代表协会对外宣传，对外交流；同时为协会整合和提供外部信息以及资源，促进协会与校外公益组织、社团的联系与合作；并协助协会其他部门开展活动，为活动的开展寻找外部的物力和财力的支持。
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="part3" class="modal fade">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">  <span aria-hidden="true">&times;</span>
+              </button>
+              <h4 class="modal-title">企划部</h4>
+            </div>
+            <div class="modal-body">
+            	企划部人员一直致力于提高部门人员的策划水平和部门管理水平，在策划方面尽量贴近实事与同学们的生活，组织方面注重于其他部门的联系，为实现志愿者协会与时俱进的更好更快发展而奋斗。
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="part4" class="modal fade">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">  <span aria-hidden="true">&times;</span>
+              </button>
+              <h4 class="modal-title">秘书部</h4>
+            </div>
+            <div class="modal-body">
+            	定位于发掘社团文化，倡导社团精神。负责协会人人主页和微博的管理，活动的新闻采写、宣传单海报制作以及视频剪辑等有关社团文化的活动。
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="part5" class="modal fade">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">  <span aria-hidden="true">&times;</span>
+              </button>
+              <h4 class="modal-title">敬老部</h4>
+            </div>
+            <div class="modal-body">
+            	敬老部，顾名思义就是孝敬老人的部门，这也是该部门成立的第二年。去年我们在敬老院、学校家属区、医院陪伴和服务了众多老人，为他们孤独的暮年献上了我们青春的笑容，在他们人生的最后温暖了他们的心。
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+			<div id="part7" class="modal fade">
+        <div class="modal-dialog" style="width: 800px;">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">  <span aria-hidden="true">&times;</span>
+              </button>
+              <h4 class="modal-title">报名人员信息</h4>
+            </div>
+            <div class="modal-body">
+            <div class="row">
+            <div class="col-lg-12">
+            <table class="table table-hover table-bordered">
+            <tr> 
+              <th>提交时间</th>
+              <th>姓名</th>
+              <th>性别</th>
+              <th>tel</th>
+              <th>email</th>
+              <th>部门</th>
+              <th>自我介绍</th>
+            </tr>
+            <tr ng-repeat="news in list">
+              <td ng-bind="formatTime(news.createTime)"></td>
+              <td>{{news.name}}</td>
+              <td>{{news.sex}}</td>
+              <td>{{news.tel}}</td>
+              <td>{{news.email}}</td>
+              <td>{{news.part}}</td>
+              <td> 
+                <div class="btn btn-md btn-default"><a href="javascript:void(0)" ng-click="openNewsDetail(news._id)">details</a></div>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+       <div id="part6" class="modal fade">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">  <span aria-hidden="true">&times;</span>
+              </button>
+              <h4 class="modal-title" ng-bind="current.name"></h4>
+            </div>
+            <div class="modal-body">
+            	<div ng-bind="current.introduce"></div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <script type="text/javascript" src="lib/jquery/dist/jquery.js"></script>
+      <script type="text/javascript" src="lib/bootstrap/dist/js/bootstrap.js"></script>
+      <script type="text/javascript" src="lib/angular/angular.js"></script>
+			<script type="text/javascript" src="webapp.js"></script>
+			<script type="text/javascript" src="lib/moment/moment.js"></script>
+			<script type="text/javascript" src="lib/markdown.js"></script>
+			<script type="text/javascript" src="services/news.client.service.js"></script>
+			<script type="text/javascript" src="controllers/news.client.controller.js"></script>
+    </div>
+  </body>
+</html>
+
